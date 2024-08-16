@@ -1,0 +1,65 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    color: #333;
+}
+
+
+h1 {
+    font-size: 5rem;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+
+h2 {
+    font-size: 2rem;
+    margin: 10 px 0;
+}
+
+
+p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+
+/* Bouncing arrow */
+.arrow {
+    margin-top: 50px;
+    font-size: 4rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+
+/* Each letter in Welcome comes in one-by-one */
+.letter {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
