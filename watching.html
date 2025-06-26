@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+        <title>Who's Watching?</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="watching-screen">
+            <h2>Who's Watching?</h2>
+            <div class="profiles">
+                <div class="profile" onclick="goTo('business')">
+                    <img src="assets/business.png" alt="Business">
+                    <p>Financial Analyst</p>
+                </div>
+                <div class="profile" onclick="goTo('entertainment')">
+                    <img src="assets/entertainment.png" alt="Entertainment">
+                    <p>Filmmaker</p>
+                </div>
+                <div class="profile" onclick="goTo('tech')">
+                    <img src="assets/tech.png" alt="Tech">
+                    <p>Software Developer</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function goTo(page) {
+                window.location.href = page + ".html";
+            }
+        </script>
+    </body>
+</html>
