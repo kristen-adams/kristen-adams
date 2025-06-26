@@ -270,7 +270,7 @@ body.about-page {
 
 .about-container h1 {
     font-size: 2.5rem;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .about-container h2 {
@@ -306,10 +306,10 @@ body.about-page {
     position: fixed;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(255,0,0,0.15), transparent 80%);
+    background: radial-gradient(circle, rgba(255,0,0,0.2), transparent 80%);
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);
-    transition: transform 0.05s ease;
+    transition: transform 0.05s linear;
     z-index: 0;
 }
