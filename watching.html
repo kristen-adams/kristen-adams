@@ -13,19 +13,25 @@
             <div class="profiles">
                 <div class="profile" onclick="goTo('business')">
                     <img src="assets/business.png" alt="Business">
-                    <p>Financial Analyst</p>
+                    <p>Business</p>
                 </div>
                 <div class="profile" onclick="goTo('entertainment')">
                     <img src="assets/entertainment.png" alt="Entertainment">
-                    <p>Filmmaker</p>
+                    <p>Entertainment</p>
                 </div>
                 <div class="profile" onclick="goTo('tech')">
                     <img src="assets/tech.png" alt="Tech">
-                    <p>Software Developer</p>
+                    <p>Technology</p>
                 </div>
             </div>
         </div>
 
+
+        <style>
+            body {
+                overflow: hidden;
+            }
+        </style>
         <script>
             function goTo(page) {
                 window.location.href = page + ".html";
