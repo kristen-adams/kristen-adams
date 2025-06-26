@@ -10,22 +10,24 @@
     <body>
        <!-- top navbar-->
         <header class="navbar">
-            <div class="logo-small">KRISTEN ADAMS</div>
-            <nav class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">Skills</a>
-                <a href="#">Projects</a>
-            </nav>
+            <div class="left-nav">
+                <a href="index.html" class="logo-small">KRISTEN ADAMS</a>
+                <nav class="nav-links">
+                    <a href="watching.html">Home</a>
+                    <a href="#">Skills</a>
+                    <a href="#">Projects</a>
+                </nav>
+            </div>
             <div class="profile-icon">
-                <img src="assets/business.png" alt="Business Icon" />
+                <img src="assets/business.png" alt="Profile Icon" onclick="goToWatching()" />
             </div>
         </header>
 
         <!-- banner with GIF -->
          <section class="hero" style="background-image: url('assets/business.gif');">
             <div class="hero-content">
-                <h1>Kristen Adams - Financial Analyst</h1>
-                <p>Creating tools to modernize lending, drive automation, and streamline capital access for growing businesses.</p>
+                <h1>The Rotational Analyst</h1>
+                <p>Learning how to code, think, and lead at the world's largest bank.</p>
                 <div class="hero-buttons">
                     <button class="play-btn">▶ Play</button>
                     <button class="info-btn">ⓘ Info</button>
@@ -33,5 +35,11 @@
             </div>
          </section>
         
+         <script>
+            function goToWatching() {
+                window.location.href = "watching.html";
+            }
+         </script>
+         
     </body>
 </html>

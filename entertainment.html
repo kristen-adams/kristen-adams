@@ -10,21 +10,23 @@
     <body>
        <!-- top navbar-->
         <header class="navbar">
-            <div class="logo-small">KRISTEN ADAMS</div>
-            <nav class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">Skills</a>
-                <a href="#">Projects</a>
-            </nav>
+            <div class="left-nav">
+                <a href="index.html" class="logo-small">KRISTEN ADAMS</a>
+                <nav class="nav-links">
+                    <a href="watching.html">Home</a>
+                    <a href="#">Skills</a>
+                    <a href="#">Projects</a>
+                </nav>
+            </div>
             <div class="profile-icon">
-                <img src="assets/entertainment.png" alt="Entertainment Icon" />
+                <img src="assets/entertainment.png" alt="Profile Icon" onclick="goToWatching()" />
             </div>
         </header>
 
         <!-- banner with GIF -->
          <section class="hero" style="background-image: url('assets/entertainment.gif');">
             <div class="hero-content">
-                <h1>Kristen Adams - Filmmaker</h1>
+                <h1>The USC Film School Grad</h1>
                 <p>Learning how to tell stories of the human experience.</p>
                 <div class="hero-buttons">
                     <button class="play-btn">▶ Play</button>
@@ -32,6 +34,13 @@
                 </div>
             </div>
          </section>
-        
+    
+
+         <script>
+            function goToWatching() {
+                window.location.href = "watching.html";
+            }
+         </script>
+         
     </body>
 </html>

@@ -9,22 +9,24 @@
     </head>
     <body>
        <!-- top navbar-->
-        <header class="navbar">
-            <div class="logo-small">KRISTEN ADAMS</div>
-            <nav class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">Skills</a>
-                <a href="#">Projects</a>
-            </nav>
+       <header class="navbar">
+            <div class="left-nav">
+                <a href="index.html" class="logo-small">KRISTEN ADAMS</a>
+                <nav class="nav-links">
+                    <a href="watching.html">Home</a>
+                    <a href="#">Skills</a>
+                    <a href="#">Projects</a>
+                </nav>
+            </div>
             <div class="profile-icon">
-                <img src="assets/tech.png" alt="Tech Icon" />
+                <img src="assets/tech.png" alt="Profile Icon" onclick="goToWatching()" />
             </div>
         </header>
 
         <!-- banner with GIF -->
          <section class="hero" style="background-image: url('assets/tech.gif');">
             <div class="hero-content">
-                <h1>Kristen Adams - Software Developer</h1>
+                <h1>The Hackathon Enthusiast</h1>
                 <p>Learning how to code.</p>
                 <div class="hero-buttons">
                     <button class="play-btn">▶ Play</button>
@@ -32,6 +34,12 @@
                 </div>
             </div>
          </section>
+
+         <script>
+            function goToWatching() {
+                window.location.href = "watching.html";
+            }
+         </script>
         
     </body>
 </html>
