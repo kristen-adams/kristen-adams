@@ -187,18 +187,26 @@ body {
 
 .hero-buttons button {
     background-color: rgba(255,255,255,0.9);
-    padding: 10 px 30px;
+    padding: 10px 30px;
     border: none;
-    padding: 10px 20px;
     margin-right: 10px;
     font-weight: bold;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-buttons .play-btn:hover {
+    background-color: #ccc;
 }
 
 .hero-buttons .info-btn {
     background-color: rgba(109,109,110,0.7);
     color: white;
+}
+
+.hero-buttons .info-btn:hover {
+    background-color: red;
 }
 
 .top-picks {

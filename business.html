@@ -29,8 +29,8 @@
                 <h1>The Rotational Analyst</h1>
                 <p>Learning how to solve complex problems at the world's largest bank.</p>
                 <div class="hero-buttons">
-                    <button class="play-btn">▶ Play</button>
-                    <button class="info-btn">ⓘ Info</button>
+                    <button class="play-btn" onclick="scrollToProjects()">▶ Play</button>
+                    <button class="info-btn" onclick="goToAbout()">ⓘ Info</button>
                 </div>
             </div>
          </section>
@@ -61,6 +61,18 @@
          <script>
             function goToWatching() {
                 window.location.href = "watching.html";
+            }
+         </script>
+         <script>
+            function goToAbout() {
+                window.location.href = "about.html";
+            }
+
+            function scrollToProjects() {
+                const projects = document.getElementById("top-picks");
+                    if (projects) {
+                        projects.scrollIntoView({behavior: "smooth"})
+                    }
             }
          </script>
 
